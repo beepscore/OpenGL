@@ -34,13 +34,11 @@ typedef enum
    GLint         drawableHeight;
 }
 
-@property (nonatomic, weak) IBOutlet id 
-   <AGLKViewDelegate> delegate;
+@property (nonatomic, weak) IBOutlet id <AGLKViewDelegate> delegate;
 @property (nonatomic, strong) EAGLContext *context;
 @property (nonatomic, readonly) NSInteger drawableWidth;
 @property (nonatomic, readonly) NSInteger drawableHeight;
-@property (nonatomic) AGLKViewDrawableDepthFormat 
-   drawableDepthFormat;
+@property (nonatomic) AGLKViewDrawableDepthFormat drawableDepthFormat;
 
 - (void)display;
 
