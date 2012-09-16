@@ -93,7 +93,6 @@
    
       if(nil != context)
       {  // Configure the new Context with required buffers
-         context = aContext;
          [EAGLContext setCurrentContext:context];
                    
          glGenFramebuffers(1, &defaultFrameBuffer);    // Step 1
