@@ -33,7 +33,7 @@
 @property (nonatomic, readonly) NSInteger framesPerSecond;
 
 /////////////////////////////////////////////////////////////////
-// Thi property determines whether to pause or resume drawing
+// This property determines whether to pause or resume drawing
 // at the rate defined by the framesPerSecond property.
 // Initial value is NO.
 @property (nonatomic, getter=isPaused) BOOL paused;
