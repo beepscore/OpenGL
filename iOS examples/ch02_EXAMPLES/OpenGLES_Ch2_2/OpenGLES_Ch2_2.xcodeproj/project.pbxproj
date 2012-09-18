@@ -51,6 +51,7 @@
 		03E264911529E8AA00012BF2 /* AGLKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGLKView.m; path = ../../../AGLKit/AGLKView.m; sourceTree = "<group>"; };
 		03E264921529E8AB00012BF2 /* AGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGLKViewController.h; path = ../../../AGLKit/AGLKViewController.h; sourceTree = "<group>"; };
 		03E264931529E8AB00012BF2 /* AGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AGLKViewController.m; path = ../../../AGLKit/AGLKViewController.m; sourceTree = "<group>"; };
+		DE71BCC71608491B0031D16D /* Ch2_2_Summary.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ch2_2_Summary.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 		03D4E5FC13EDDFB0007A9B0E = {
 			isa = PBXGroup;
 			children = (
+				DE71BCC71608491B0031D16D /* Ch2_2_Summary.md */,
 				03D4E61113EDDFB1007A9B0E /* OpenGLES_Ch2_2 */,
 				03D4E60A13EDDFB1007A9B0E /* Frameworks */,
 				03D4E60813EDDFB1007A9B0E /* Products */,
