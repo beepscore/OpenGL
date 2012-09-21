@@ -20,17 +20,11 @@ typedef enum {
 
 @interface AGLKVertexAttribArrayBuffer : NSObject
 {
-   GLsizeiptr   stride;
-   GLsizeiptr   bufferSizeBytes;
-   GLuint       name;
 }
 
-@property (nonatomic, readonly) GLuint
-   name;
-@property (nonatomic, readonly) GLsizeiptr
-   bufferSizeBytes;
-@property (nonatomic, readonly) GLsizeiptr
-   stride;
+@property (nonatomic, readonly) GLuint name;
+@property (nonatomic, readonly) GLsizeiptr bufferSizeBytes;
+@property (nonatomic, readonly) GLsizeiptr stride;
 
 + (void)drawPreparedArraysWithMode:(GLenum)mode
    startVertexIndex:(GLint)first
