@@ -7,6 +7,8 @@
 
 @implementation AGLKContext
 
+@synthesize clearColor = clearColor;
+
 /////////////////////////////////////////////////////////////////
 // This method sets the clear (background) RGBA color.
 // The clear color is undefined until this method is called.
