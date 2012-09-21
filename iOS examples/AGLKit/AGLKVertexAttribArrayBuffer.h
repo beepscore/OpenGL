@@ -19,8 +19,7 @@ typedef enum {
 
 
 @interface AGLKVertexAttribArrayBuffer : NSObject
-{
-}
+
 
 @property (nonatomic, readonly) GLuint name;
 @property (nonatomic, readonly) GLsizeiptr bufferSizeBytes;
