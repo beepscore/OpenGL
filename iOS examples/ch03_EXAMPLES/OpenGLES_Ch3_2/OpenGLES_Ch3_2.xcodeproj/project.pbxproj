@@ -58,6 +58,7 @@
 		03EB88B713F05B54008DB487 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		03EB88B813F05B54008DB487 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		DE2BF271160C4BA00054B341 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DEF27614160C50D5003C2E41 /* Ch3_2_Notes.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ch3_2_Notes.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		0345CD6E13F05ABA0089B01C = {
 			isa = PBXGroup;
 			children = (
+				DEF27614160C50D5003C2E41 /* Ch3_2_Notes.md */,
 				DE2BF271160C4BA00054B341 /* Default-568h@2x.png */,
 				0345CD8313F05ABA0089B01C /* OpenGLES_Ch3_2 */,
 				0345CD7C13F05ABA0089B01C /* Frameworks */,
