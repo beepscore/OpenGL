@@ -28,7 +28,16 @@
 
 @interface AGLKTextureLoader : NSObject
 
-+ (AGLKTextureInfo *)textureWithCGImage:(CGImageRef)cgImage                                                         options:(NSDictionary *)options 
-   error:(NSError **)outError; 
-   
+// This method generates a new OpenGL ES texture buffer and 
+// initializes the buffer contents using pixel data from the 
+// specified Core Graphics image, cgImage. This method returns an
+// immutable AGLKTextureInfo instance initialized with 
+// information about the newly generated texture buffer.
+//    The generated texture buffer has power of 2 dimensions. The
+// provided image data is scaled (re-sampled) by Core Graphics as
+// necessary to fit within the generated texture buffer.
++ (AGLKTextureInfo *)textureWithCGImage:(CGImageRef)cgImage
+                                options:(NSDictionary *)options
+                                  error:(NSError **)outError;
+
 @end
