@@ -67,5 +67,5 @@ AGLKTextureLoader instead of Apple's GLKTextureLoader.
 - (AGLKTextureLoader) category adds method -initWithName:target:width:height: to AGLKTextureInfo
 - location in AGLKTextureLoader.m file and name AGLKTextureLoader signal it is for use within the AGLKTextureLoader class.
 
-##Changes
-
+##My Changes
+In OpenGLES_Ch3_2ViewController changed deprecated viewDidUnload to dealloc.
