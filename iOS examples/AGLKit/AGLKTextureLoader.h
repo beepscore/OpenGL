@@ -10,10 +10,10 @@
 @interface AGLKTextureInfo : NSObject
 {
 @private
-   GLuint name;
-   GLenum target;
-   GLuint width;
-   GLuint height;
+    GLuint name;
+    GLenum target;
+    GLuint width;
+    GLuint height;
 }
 
 @property (readonly) GLuint name;
