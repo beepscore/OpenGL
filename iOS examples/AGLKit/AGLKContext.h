@@ -7,7 +7,7 @@
 
 @interface AGLKContext : EAGLContext
 
-// clear (background) RGBA color.
+// clearColor is the "clear" (background) RGBA color.
 // The clear color is undefined until it is set.
 @property (nonatomic, assign, readwrite) GLKVector4 clearColor;
 
