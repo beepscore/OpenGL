@@ -20,10 +20,6 @@
 @synthesize stride;
 
 
-/////////////////////////////////////////////////////////////////
-// This method creates a vertex attribute array buffer in
-// the current OpenGL ES context for the thread upon which this
-// method is called.
 - (id)initWithAttribStride:(GLsizeiptr)aStride
           numberOfVertices:(GLsizei)count
                      bytes:(const GLvoid *)dataPtr
@@ -56,8 +52,6 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
-// This method loads the data stored by the receiver.
 - (void)reinitWithAttribStride:(GLsizeiptr)aStride
               numberOfVertices:(GLsizei)count
                          bytes:(const GLvoid *)dataPtr;
@@ -80,11 +74,6 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
-// A vertex attribute array buffer must be prepared when your
-// application wants to use the buffer to render any geometry.
-// When your application prepares an buffer, some OpenGL ES state
-// is altered to allow bind the buffer and configure pointers.
 - (void)prepareToDrawWithAttrib:(GLuint)index
             numberOfCoordinates:(GLint)count
                    attribOffset:(GLsizeiptr)offset
@@ -123,10 +112,6 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
-// Submits the drawing command identified by mode and instructs
-// OpenGL ES to use count vertices from the buffer starting from
-// the vertex at index first. Vertex indices start at 0.
 - (void)drawArrayWithMode:(GLenum)mode
          startVertexIndex:(GLint)first
          numberOfVertices:(GLsizei)count
@@ -139,11 +124,6 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
-// Submits the drawing command identified by mode and instructs
-// OpenGL ES to use count vertices from previously prepared
-// buffers starting from the vertex at index first in the
-// prepared buffers
 + (void)drawPreparedArraysWithMode:(GLenum)mode
                   startVertexIndex:(GLint)first
                   numberOfVertices:(GLsizei)count;
@@ -152,7 +132,6 @@
 }
 
 
-/////////////////////////////////////////////////////////////////
 // This method deletes the receiver's buffer from the current
 // Context when the receiver is deallocated.
 - (void)dealloc
