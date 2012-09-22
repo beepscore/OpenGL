@@ -120,17 +120,10 @@ static const SceneVertex vertices[] =
 }
 
 
-/////////////////////////////////////////////////////////////////
-// Called when the view controller's view has been unloaded
-// Perform clean-up that is possible when you know the view 
-// controller's view won't be asked to draw again soon.
-- (void)viewDidUnload
+- (void)dealloc
 {
-   [super viewDidUnload];
-   
    // Make the view's context current
-   GLKView *view = (GLKView *)self.view;
-   [AGLKContext setCurrentContext:view.context];
+   [AGLKContext setCurrentContext:((GLKView *)self.view).context];
     
    // Delete buffers that aren't needed when view is unloaded
    self.vertexBuffer = nil;
