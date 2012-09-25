@@ -128,16 +128,17 @@ static const SceneVertex vertices[] =
                                   attribOffset:offsetof(SceneVertex, textureCoords)
                                   shouldEnable:YES];
     
+    // First pass of multi-pass render. textureInfo0
     self.baseEffect.texture2d0.name = self.textureInfo0.name;
     self.baseEffect.texture2d0.target = self.textureInfo0.target;
     [self.baseEffect prepareToDraw];
     
-    // Draw triangles using the vertices in the
-    // currently bound vertex buffer
+    // Draw triangles using the vertices in the currently bound vertex buffer
     [self.vertexBuffer drawArrayWithMode:GL_TRIANGLES
                         startVertexIndex:0
                         numberOfVertices:sizeof(vertices) / sizeof(SceneVertex)];
     
+    // Second pass of multi-pass render. textureInfo1
     self.baseEffect.texture2d0.name = self.textureInfo1.name;
     self.baseEffect.texture2d0.target = self.textureInfo1.target;
     [self.baseEffect prepareToDraw];
