@@ -9,13 +9,9 @@
 
 
 @interface OpenGLES_Ch3_4ViewController : GLKViewController
-{
-}
 
-@property (strong, nonatomic) GLKBaseEffect 
-   *baseEffect;
-@property (strong, nonatomic) AGLKVertexAttribArrayBuffer 
-   *vertexBuffer;
+@property (strong, nonatomic) GLKBaseEffect *baseEffect;
+@property (strong, nonatomic) AGLKVertexAttribArrayBuffer *vertexBuffer;
 @property (strong, nonatomic) GLKTextureInfo *textureInfo0;
 @property (strong, nonatomic) GLKTextureInfo *textureInfo1;
 
