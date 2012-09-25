@@ -46,5 +46,6 @@ Ch 4 will discuss lighting.
 - Alpha = 1 opaque
 
 ## My Changes
-In OpenGLES_Ch3_3ViewController changed deprecated viewDidUnload to dealloc.
+- In OpenGLES_Ch3_3ViewController changed deprecated viewDidUnload to dealloc.
+- Moved method header comments from implementation .m to interface .h
 
