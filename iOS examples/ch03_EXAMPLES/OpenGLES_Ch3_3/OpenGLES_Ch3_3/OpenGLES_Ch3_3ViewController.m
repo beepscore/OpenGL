@@ -260,13 +260,7 @@ static GLKVector3 movementVectors[3] = {
 }
 
 
-/////////////////////////////////////////////////////////////////
-// Called when the view controller's view has been unloaded
-// Perform clean-up that is possible when you know the view
-// controller's view won't be asked to draw again soon.
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
+- (void)dealloc {
     
     // Make the view's context current
     GLKView *view = (GLKView *)self.view;
