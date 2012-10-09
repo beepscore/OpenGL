@@ -1,11 +1,10 @@
 by Steve Baker, Beepscore LLC
 
 # Purpose:
-Record notes for Ch4_1.
+Record notes for Ch4.
 
 # References:
 Book, Buck, Learning OpenGL ES for iOS  
-The OpenGLES_Ch4_1 Example pg 
 Ch 4 Lighting pg 87 - 106.  
 <http://www.cosmicthump.com/learning-opengl-es-information/>
 
@@ -125,7 +124,8 @@ returns unit normal vector perpendicular to surface formed by vectorA and vector
 ## Textures
 ### Bake Lighting into Textures pg 104 - 105
 With embedded GPUs, textures almost always produce higher quality rendered results than OpenGL ES materials.
-Example 4_2 uses texture map with baked lighting.
+### Example 4_2
+Uses texture map with baked lighting.
 
 ## Fragment Operations pg 105 - 106
 - Calculate lighting for each fragment (texel) instead of for each vertex
@@ -134,6 +134,4 @@ Example 4_2 uses texture map with baked lighting.
 - "Per-fragment lighting techniques are possible with all hardware that
 runs iOS and will become more common as memory, processor, and tools
 support improve."
-
-## My Changes
 
