@@ -83,15 +83,21 @@ Scaling by a negative number flips axis direction.
 #### Order matters
 Ch5_4 UI has controls to apply multiple transformations.  
 
-
 #### Open GL ES 1.1 had 3 matrix stacks
-- projection matrix
-- model-view matrix
+- projection matrix - define coordinate system for the scene
+- modelview matrix - define coordinate system for an object
 - texture matrix
+
+#### GLKit modelviewProjection matrix
+Concantenates modelview matrix with projection matrix.
 
 ##### Texture matrix
 Currently not in GLKit, though Apple may add it.
 The author wrote AGLKTextureTransformBaseEffect.
+
+##### Ch5_5
+-  texture matrix  
+-  GLKMatrixStack stores 4x4 matrices on a stack  
 
 ### Transformation Cookbook
 
