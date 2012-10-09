@@ -56,8 +56,8 @@ Scaling can stretch unit vectors so they aren't unit length.
 To maintain correct lighting, rescale normal vectors to unit length.  
 
 ## Deep Dive
->"Example OpenGLES_Ch5_3 ... explores how GLKView works by
-replicating its depth buffer functionality."  
+### OpenGLES_Ch5_3
+>"explores how GLKView works by replicating its depth buffer functionality."  
  
 ## Transformations
 
@@ -81,7 +81,8 @@ In radians. (pi radians / 180 degrees).
 Scaling by a negative number flips axis direction.
 
 #### Order matters
-Ch5_4 UI has controls to apply multiple transformations.  
+##### OpenGLES_Ch5_4
+UI has controls to apply multiple transformations.  
 
 #### Open GL ES 1.1 had 3 matrix stacks
 - projection matrix - define coordinate system for the scene
@@ -95,13 +96,30 @@ Concantenates modelview matrix with projection matrix.
 Currently not in GLKit, though Apple may add it.
 The author wrote AGLKTextureTransformBaseEffect.
 
-##### Ch5_5
+##### OpenGLES_Ch5_5
 -  texture matrix  
 -  GLKMatrixStack stores 4x4 matrices on a stack  
 
 ### Transformation Cookbook
+#### Skew
+Makes axes non-perpendicular
+
 
 ### Perspective and the Viewing Frustum
+- Orthographic, no perspective  
+- Perspective  
 Units get progressively shorter away from the origin.  
 Makes objects appear smaller as they get farther away.  
+
+Frustrum near clipping plane must be z >= 0.
+z shouldn't be too small, otherwise math rounding error can affect depth buffer and rendering.  
+GLKMatrix4MakeFrustum() flips the sign of the Z axis.  
+Viewpoint is from origin.  
+
+##### OpenGLES_Ch5_6
+Simulates earth and moon rotating.
+
+## Summary
+>"None of the examples in this chapter actually change the
+components of vertices stored in vertex buffers. The vertex positions remain constant. Instead, transformations change the way that the vertices are projected into the 2D pixel color render buffer."
 
