@@ -5,11 +5,13 @@ Record notes for Ch6.
 
 # References:
 Book, Buck, Learning OpenGL ES for iOS  
-Ch 6 Animation pg 133 - 158.  
+Ch 6 Animation page 133 - 158.  
 <http://www.cosmicthump.com/learning-opengl-es-information/>
 
 Quaternion  
 <http://en.wikipedia.org/wiki/Quaternion>
+
+---
 
 # Results: 
 
@@ -21,7 +23,7 @@ Quaternion
 | OpenGLES_Ch6_2 | sinuously rippling (undulating) plane                       |          |
 | OpenGLES_Ch6_3 | adds 2 colored moving spotlights                            |          |
 | OpenGLES_Ch6_4 | adds plane texture with tranparent areas                    |          |
-| OpenGLES_Ch6_5 | plane texture is animated movie. Optional turn on ripple.   | texture  |
+| OpenGLES_Ch6_5 | plane texture is animated movie. Optionally turn on ripple. | texture  |
 
 
 ## Methods for implementing animation
@@ -48,6 +50,8 @@ GLKViewController
 
 Core Animation swaps the front frame buffer and back frame buffer during hardware display refresh.
 
+---
+
 ## OpenGLES_Ch6_1 Motion Within a Scene page 134-139
 Simulates bumper car ride.  
 Each car has its own local coordinate system and is at origin {0,0,0}.  
@@ -60,11 +64,13 @@ App doesn't change vertex position or vertex normals.
 - third 3 arguments [x,y,z] "up" direction vector
 - returns a modelView matrix
 
-GLKQuaternion avoids gimbal lock.
+GLKQuaternion for rotation avoids gimbal lock.
 
 First person Point of View (POV) moves with the car.  
 Third person point of view is stationary outside car rink.  
 App uses low pass filter to gradually change point of view.
+
+---
 
 ## Animating Vertex Data
 
