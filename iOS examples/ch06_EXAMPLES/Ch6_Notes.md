@@ -13,6 +13,17 @@ Quaternion
 
 # Results: 
 
+## Ch6 Code Examples
+
+| Example        | Description                                                 | Animates |
+| -------------- | ----------------------------------------------------------- | -------- |
+| OpenGLES_Ch6_1 | bumper car ride                                             | location |
+| OpenGLES_Ch6_2 | sinuously rippling (undulating) plane                       |          |
+| OpenGLES_Ch6_3 | adds 2 colored moving spotlights                            |          |
+| OpenGLES_Ch6_4 | adds plane texture with tranparent areas                    |          |
+| OpenGLES_Ch6_5 | plane texture is animated movie. Optional turn on ripple.   | texture  |
+
+
 ## Methods for implementing animation
 
 | Class                     | Method                    |
@@ -56,12 +67,9 @@ Third person point of view is stationary outside car rink.
 App uses low pass filter to gradually change point of view.
 
 ## Animating Vertex Data
-Sphere appears stretched vertically.  
-Ch5_1 uses multiple vertex attribute array buffers. This is easiest for use with sphere.h.
 
 
 ## Animating Colors and Lights
-Uses a transformation so sphere appears spherical.
 
 ## Animating Textures
 
