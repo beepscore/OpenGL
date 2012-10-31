@@ -33,8 +33,11 @@ Bullet Physics
 ## Modelling Tools and File Formats
 Vertex mesh defines model shape.
 
-### 3D modelling software
-3ds Max, Maya, Blender, SketchUp
+### Popular 3D Modeling Tools
+- 3ds Max
+- Maya
+- Blender
+- SketchUp
 
 ### 3D file formats
 | Format         | Information stored                                          |
@@ -46,11 +49,27 @@ Vertex mesh defines model shape.
 - Create model, store as COLLADA file.
 - Merge model meshes into one big mesh, store in easily parseable file.
 
+
 #### ColladaViewer.app
 - parses .dae xml file into model.
+- exports as .modelplist
 - models must be within a few meters of the coordinate system origin to be visible.
 
-### Bullet Physics
+## Reading modelplist Files
+Figure 7.3 pg 167 shows structure  
+
+## The OpenGLES_Ch7_1 Example
+### Back Face Culling
+
+## Advanced Models
+### Skeletal Animation
+#### OpenGLES_Ch7_2
+Figure 7.6 Each vertex in UtilityMesh can reference 4 joint matrices in UtilityArmatureBaseEffect  
+
+### Skinning
+#### OpenGLES_Ch7_3
+### Inverse Kinematics and Physics Simulation 
+#### Bullet Physics
 Works with Blender and SketchUp, exports COLLADA.
 
 ## Summary
