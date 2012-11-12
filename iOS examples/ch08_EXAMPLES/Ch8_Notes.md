@@ -5,14 +5,14 @@ Record notes for Ch 8.
 
 # References:
 Book, Buck, Learning OpenGL ES for iOS  
-Ch 8 Special Effects p 183-216 
+Ch 8 Special Effects p 183-216  
 <http://www.cosmicthump.com/learning-op1engl-es-information/>  
 
 ---
 
 # Results: 
 
-These techniques use 2D images to fool the eye, simpler than 3D geometry  
+These techniques use 2D images to fool the eye, simpler than using 3D geometry  
 
 - Skybox
 - Particles
