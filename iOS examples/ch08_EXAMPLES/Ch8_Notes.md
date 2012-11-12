@@ -20,12 +20,12 @@ These techniques use 2D images to fool the eye, simpler than using 3D geometry
 
 ## Ch8 Code Examples
 
-| Example        | Description            |
-| -------------- | ---------------------- |
-| OpenGLES_Ch8_1 | uses GLKSkyboxEffect   |
-| OpenGLES_Ch8_2 |                        |
-| OpenGLES_Ch8_3 |                        |
-| OpenGLES_Ch8_4 |                        |
+| Example        | Description                                                                 |
+| -------------- | ----------------------                                                      |
+| OpenGLES_Ch8_1 | uses GLKSkyboxEffect                                                        |
+| OpenGLES_Ch8_2 | uses AGLKSkyboxEffect to show approximate implementation of GLKSkyboxEffect |
+| OpenGLES_Ch8_3 |                                                                             |
+| OpenGLES_Ch8_4 |                                                                             |
 
 ## Skybox
 Put the 3D geometry, and usually the camera, inside a box.  
@@ -47,6 +47,17 @@ Distortion may become noticeable if camera gets too close to a cube edge.
 - Texture is sampled in a direction from surface of reflective object to the sides of an enclosing cube.   
 
 ## Deep Dive: How Does GLKSkyboxEffect Work?  
+
+### Vertex Shader
+### Fragment Shader
+
+### Tying OpenGL ES 2.0 Shading Language Programs to Your Code
+Methods reused by each of the custom Shading Language examples in this book:  
+
+    - (BOOL)loadShaders;  
+    - (BOOL)compileShader:(GLuint *)shader type:(GLenum)type file:(NSString *)file;  
+    - (BOOL)linkProgram:(GLuint)prog;  
+    - (BOOL)validateProgram:(GLuint)prog;  
 
 
 ## Particles
