@@ -46,9 +46,9 @@ Terrain mesh is rectangular grid in X,Z plane.
 File supplies Y elevation (altitude).  
 
 #### TerrainEditor.app
-Imports grayscale image to be used as height map.
-Exports Core Data terrain model.  
-Mac OS X app. Uses Core Data.  
+Run app on Mac OS X.  
+App imports grayscale image to be used as height map.  
+File/Save As exports Core Data terrain model as binary, sqlite, or xml.  
 
 ##### TEDocument
 Sets constant TEMetersPerUnit = 10.0 (10.0 meter/pixel)  
