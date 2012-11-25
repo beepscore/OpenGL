@@ -35,7 +35,7 @@ Picking determines which object the user selected.
 
 | Example         | Description                                         |
 | --------------- | ----------------------                              |
-| TerrainEditor   | Mac OS X, generates terrain models                  |
+| TerrainEditor   | Mac OS X, generates terrain model                   |
 | OpenGLES_Ch10_1 | Terrain with false color for picking                |
 | OpenGLES_Ch10_2 | like 10_1, but optimizes via frustrum-based culling |
 
@@ -49,6 +49,7 @@ File supplies Y elevation (altitude).
 Run app on Mac OS X.  
 App imports grayscale image to be used as height map.  
 File/Save As exports Core Data terrain model as binary, sqlite, or xml.  
+In Finder double clicking .binary or .sqlite opens TerrainEditor.app.
 
 ##### TEDocument
 Sets constant TEMetersPerUnit = 10.0 (10.0 meter/pixel)  
@@ -71,10 +72,18 @@ Rescales height.
 ---
 
 #### OpenGLES_Ch10_1 
-iOS app.  Imports Core Data model.  
-Generates Objective-C object TETerrain.  
+iOS app.  Imports file trail.binary containing Core Data terrain model.  
+File was exported from TerrainEditor.app.  
 
-App bundle is OpenGLES_Ch10_1.app.  
+ch10_EXAMPLES.app generates Objective-C object TETerrain.  
+
+---
+
+##### Aside: Terrain data file location
+In Xcode project navigator, file is in group Supporting Files.  
+File Inspector shows file isn't in directory ch10_EXAMPLES, but in sibling directory "Resources".
+
+After building app, app bundle is OpenGLES_Ch10_1.app.  
 For simulator, app may be located at:  
 
     ~/Library/Application Support/iPhoneSimulator/6.0/Applications/<long string here>/OpenGLES_Ch10_1.app  
@@ -84,12 +93,16 @@ In Finder, show package contents. Directory OpenGLES_Ch10_1.app contains:
 - trail.binary (11.8 Mb)
 - OpenGLES_Ch10_1.momd (16 kb).  
 
+---
+
 #### OpenGLES_Ch10_1AppDelegate
 
 ##### didFinishLaunchingWithOptions:
 Makes Core Data request to managedObjectContext, response sets self.terrain  
 
-##### Core Data stack
+---
+
+##### Aside: Core Data stack
 
 ###### managedObjectContext
 Connects itself to use persistentStoreCoordinator
